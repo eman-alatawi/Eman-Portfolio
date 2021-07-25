@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+$fontFamily: "Orbitron",
+sans-serif;
+$primaryColor: #e3cd9e;
+$secondaryColor: #9edce3;
+
+@mixin flexContent($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}
+
+body {
+    margin: auto;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    font-family: $fontFamily;
+}
+
+.logo {
+    width: 20rem;
+}
+
+.Header {
+    @include flexContent(row, center);
+    height: 80vh;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-blend-mode: darken;
+
+    .container {
+        @include flexContent(row, center);
+
+        .navList {
+            a {
+                color: $primaryColor !important;
+
+                &:hover {
+                    color: $secondaryColor;
+                    border-bottom: 3px solid $secondaryColor;
+                }
+            }
+        }
+    }
+}
