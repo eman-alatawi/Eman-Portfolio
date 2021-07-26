@@ -3,9 +3,9 @@ import Typed from "react-typed";
 
 function Header() {
   return (
-    <>
+    <div className="Header-section" id="home">
       <div className="pt-1 text-center ">
-        <p className="text-uppercase myTitle">Full stack developer</p>
+        <p className="text-capitalize myTitle">Full stack developer</p>
         <Typed
           className=" typed-text "
           strings={[
@@ -26,7 +26,7 @@ function Header() {
           loop
         />
       </div>
-    </>
+    </div>
   );
 }
 

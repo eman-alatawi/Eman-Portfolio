@@ -5,14 +5,11 @@ import Nav from 'react-bootstrap/Nav'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Container from 'react-bootstrap/Container'
-import Header from './Header';
 
 function NavBar() {
     return (
-        <div className="Header-section">
-
-            <Container className=" container mb-5 ">
-                <Navbar expand="lg">
+            <Container className=" container mb-5  p-3 ">
+                <Navbar expand="lg" className="p-3">
                     <Navbar.Brand href="#"><img className="logo" src={logo} alt="logo" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll">
                         <FontAwesomeIcon icon={faBars} style={{ color: '#9edce3' }} />
@@ -26,8 +23,8 @@ function NavBar() {
                             style={{ maxHeight: '30vh' }}
                             navbarScroll
                         >
-                            <Nav.Link className="nav-Link" href="#action1">Home</Nav.Link>
-                            <Nav.Link className="nav-Link" href="#action2">About Me</Nav.Link>
+                            <Nav.Link className="nav-Link" href="#home">Home</Nav.Link>
+                            <Nav.Link className="nav-Link" href="#aboutMe">About Me</Nav.Link>
                             <Nav.Link className="nav-Link" href="#action2">Projects</Nav.Link>
                             <Nav.Link className="nav-Link" href="#action2">Skills</Nav.Link>
                             <Nav.Link className="nav-Link" href="#action2">Contact Me</Nav.Link>
@@ -37,8 +34,6 @@ function NavBar() {
                 </Navbar>
 
             </Container>
-            <Header />
-        </div>
     )
 }
 
