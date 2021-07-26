@@ -6,51 +6,45 @@ body {
 }
 
 .logo {
-  width: 20rem;
+  width: 15rem;
 }
 
-.Header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 80vh;
-  background-image: -webkit-gradient(linear, left top, right top, from(#434343), to(black));
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+.Header-section {
+  height: 90vh;
+  background-image: url("/src/Header-background.jpeg"), -webkit-gradient(linear, left top, left bottom, color-stop(15%, #0f0f13), color-stop(50%, #d3d8da));
+  background-image: url("/src/Header-background.jpeg"), linear-gradient(to bottom, #0f0f13 15%, #d3d8da 50%);
   background-blend-mode: darken;
 }
 
-.Header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.Header-section .container {
+  height: 40vh;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.Header .container .navList a {
-  color: #e3cd9e !important;
+.Header-section .container .navList .nav-Link {
+  text-align: center;
+  margin-right: 0.50rem;
+  margin-left: 0.50rem;
+  color: #e1a628;
 }
 
-.Header .container .navList a:hover {
-  color: #9edce3;
-  border-bottom: 3px solid #9edce3;
+.Header-section .container .navList .nav-Link:hover {
+  color: #5dc8d3;
+  border-bottom: 3px solid #5dc8d3;
+}
+
+.Header-section .container .navbarScroll {
+  margin-bottom: 2rem;
+  text-align: right;
+}
+
+.myTitle {
+  color: #4286d8;
+  font-size: larger;
+}
+
+.typed-text {
+  color: #5dc8d3;
 }
 /*# sourceMappingURL=App.css.map */
