@@ -26,4 +26,4 @@
 
 ### Website Screenshot:
 
-<img src="https://drive.google.com/uc?export=view&id=1DYnK-fPaPsb-W1UNu9sh4SsWRWhwYSex" width="400">
+![Website Screenshot](https://drive.google.com/uc?export=view&id=1DYnK-fPaPsb-W1UNu9sh4SsWRWhwYSex)
