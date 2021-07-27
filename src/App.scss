@@ -185,6 +185,15 @@ h3 {
     font-size: small
 }
 
+// Contact.js
+.contact{
+    height: 10vh;
+    @include flexContent(row, center);
+
+    background-color: $primaryColor;
+
+}
+
 // Footer.js
 .footer{
     @include flexContent(row, center);
