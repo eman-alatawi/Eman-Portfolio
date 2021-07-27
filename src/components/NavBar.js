@@ -25,7 +25,7 @@ function NavBar() {
                         >
                             <Nav.Link className="nav-Link" href="#home">Home</Nav.Link>
                             <Nav.Link className="nav-Link" href="#aboutMe">About Me</Nav.Link>
-                            <Nav.Link className="nav-Link" href="#action2">Projects</Nav.Link>
+                            <Nav.Link className="nav-Link" href="#projects">Projects</Nav.Link>
                             <Nav.Link className="nav-Link" href="#action2">Skills</Nav.Link>
                             <Nav.Link className="nav-Link" href="#action2">Contact Me</Nav.Link>
 

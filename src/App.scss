@@ -22,15 +22,28 @@ $sectionHeight: 80vh;
         overflow-y: scroll;
         font-size: small;
     }
-    img{
+
+    img {
         width: 15rem;
     }
+}
+
+@mixin Projects-Veritcle {
+    @include flexContent(column, center);
+
+    width: 80vw;
+    overflow-y: scroll;
+    font-size: small;
 }
 
 body {
     margin: auto;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     font-family: $fontFamily;
+}
+
+h3 {
+    color: $primaryColor;
 }
 
 // NavBar.js
@@ -41,14 +54,13 @@ body {
 .container {
     background-color: rgba(15, 15, 19, 0.856);
     position: fixed;
-    // width: 100vw;
+    z-index: 1;
 
     .navList {
-
         .nav-Link {
             text-align: center;
-            margin-right: 0.50rem;
-            margin-left: 0.50rem;
+            margin-right: 0.5rem;
+            margin-left: 0.5rem;
             color: $primaryColor !important;
 
             &:hover {
@@ -68,13 +80,12 @@ body {
     }
 }
 
-
-
 // Header.js
 .Header-section {
     @include flexContent(row, center);
     height: 100vh;
-    background-image: url('/src/Header-background.jpeg'), linear-gradient(to bottom, rgb(15, 15, 19) 15%, #d3d8da 50%);
+    background-image: url("/src/Header-background.jpeg"),
+        linear-gradient(to bottom, rgb(15, 15, 19) 15%, #d3d8da 50%);
     background-blend-mode: darken;
 
     .myTitle {
@@ -98,19 +109,11 @@ body {
     }
 }
 
-
-
-
 //  AboutMe.js
 
 .about-me {
     height: $sectionHeight;
     @include flexContent(row, space-evenly);
-    // background-color: #e4e1db;
-
-    h3 {
-        color: $primaryColor;
-    }
 
     p {
         font-family: sans-serif;
@@ -127,3 +130,49 @@ body {
     }
 }
 
+// Projects.js
+.projects {
+    padding: 3rem;
+    height: $sectionHeight;
+    @include flexContent(column, space-evenly);
+    background-image: url("/src/projects-sec.jpeg"),
+        linear-gradient(to top, rgb(15, 15, 18) 30%, #d3d8da 100%);
+    background-blend-mode: multiply;
+    background-size: cover;
+
+    .projects-list {
+        @include flexContent(row, center);
+
+        @media (max-width: 575.98px) {
+            @include Projects-Veritcle();
+        }
+
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            @include Projects-Veritcle();
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        height: min-content;
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        height: min-content;
+    }
+}
+
+// ProjectCard.js
+
+.content {
+    min-height: "10rem";
+
+    &:hover {
+        background-color: $secondaryColor;
+    }
+}
+
+.card-footer {
+    @include flexContent(row, space-between);
+    min-height: "2rem";
+    color: #808485;
+}

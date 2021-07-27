@@ -5,6 +5,10 @@ body {
   font-family: "Orbitron", sans-serif;
 }
 
+h3 {
+  color: #e1a628;
+}
+
 .logo {
   width: 15rem;
 }
@@ -12,12 +16,13 @@ body {
 .container {
   background-color: rgba(15, 15, 19, 0.856);
   position: fixed;
+  z-index: 1;
 }
 
 .container .navList .nav-Link {
   text-align: center;
-  margin-right: 0.50rem;
-  margin-left: 0.50rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   color: #e1a628 !important;
 }
 
@@ -95,10 +100,6 @@ body {
           align-items: center;
 }
 
-.about-me h3 {
-  color: #e1a628;
-}
-
 .about-me p {
   font-family: sans-serif;
   width: 50vw;
@@ -155,5 +156,127 @@ body {
   .about-me img {
     width: 15rem;
   }
+}
+
+.projects {
+  padding: 3rem;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("/src/projects-sec.jpeg"), -webkit-gradient(linear, left bottom, left top, color-stop(30%, #0f0f12), to(#d3d8da));
+  background-image: url("/src/projects-sec.jpeg"), linear-gradient(to top, #0f0f12 30%, #d3d8da 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.projects .projects-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 575.98px) {
+  .projects .projects-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80vw;
+    overflow-y: scroll;
+    font-size: small;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .projects .projects-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80vw;
+    overflow-y: scroll;
+    font-size: small;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .projects {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .projects {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+}
+
+.content {
+  min-height: "10rem";
+}
+
+.content:hover {
+  background-color: #5dc8d3;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: "2rem";
+  color: #808485;
 }
 /*# sourceMappingURL=App.css.map */
