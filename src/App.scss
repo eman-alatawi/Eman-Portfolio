@@ -4,7 +4,7 @@ $fontFamily: "Orbitron",
 sans-serif;
 $primaryColor: #e1a628;
 $secondaryColor: #5dc8d3;
-$sectionHeight: 80vh;
+$sectionHeight: 100vh;
 
 @mixin flexContent($direction, $justify) {
     display: flex;
@@ -14,7 +14,7 @@ $sectionHeight: 80vh;
 }
 
 @mixin aboutMe-Veritcle {
-    @include flexContent(column, space-around);
+    @include flexContent(column, center);
 
     p {
         width: 70vw;
@@ -176,3 +176,39 @@ h3 {
     min-height: "2rem";
     color: #808485;
 }
+
+//Experience.js
+.experience{
+    height: 90vh;
+    @include flexContent(column, space-between);
+    padding-top: 3rem;
+    font-size: small
+}
+
+// Footer.js
+.footer{
+    @include flexContent(row, center);
+    background-color: rgba(15, 15, 19, 0.856);
+    color: $secondaryColor;
+    padding: 2rem;
+    .footerContainer{
+        @include flexContent(column, center);
+        height: 20vh;
+    }
+
+    .iconsContainer{
+        @include flexContent(row, space-evenly);
+
+        .icon{
+            color: $secondaryColor;
+        }
+    }
+
+     @media (max-width: 575.98px) {
+        font-size: smaller;    
+    }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        font-size: smaller;  
+    }
+}
+ 
