@@ -15,6 +15,7 @@ function Projects() {
             gitHubUrl={project.gitHubUrl}
             discription={project.discription}
             year={project.year}
+            technologies={project.technologies}
           />
         ))}
       </div>
