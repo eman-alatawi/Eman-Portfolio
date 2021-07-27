@@ -6,7 +6,6 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footerContainer">
-        <p>Portfolio</p>
         <p>Ⓒ Copy right for Eman Alatawi 2021</p>
         <div className=" iconsContainer  ">
           <div className="me-4">

@@ -52,8 +52,8 @@ h3 {
 }
 
 .container {
-    background-color: rgba(15, 15, 19, 0.856);
-    position: fixed;
+    padding: 0;
+    position: fixed !important;
     z-index: 1;
 
     .navList {
@@ -68,6 +68,12 @@ h3 {
                 border-bottom: 3px solid $secondaryColor;
             }
         }
+    }
+
+    nav.p-3.navbar.navbar-expand-lg.navbar-light {
+        left: 0;
+        background-color: rgba(15, 15, 19, 0.856);
+        width: 100vw;
     }
 
     .navbarScroll {
@@ -85,7 +91,7 @@ h3 {
     @include flexContent(row, center);
     height: 100vh;
     background-image: url("/src/Header-background.jpeg"),
-        linear-gradient(to bottom, rgb(15, 15, 19) 15%, #d3d8da 50%);
+        linear-gradient(to bottom, rgb(15, 15, 19) 20%, #999fa1 50%);
     background-blend-mode: darken;
 
     .myTitle {
@@ -110,7 +116,6 @@ h3 {
 }
 
 //  AboutMe.js
-
 .about-me {
     height: $sectionHeight;
     @include flexContent(row, space-evenly);
@@ -162,7 +167,6 @@ h3 {
 }
 
 // ProjectCard.js
-
 .content {
     min-height: "10rem";
 
@@ -178,15 +182,15 @@ h3 {
 }
 
 //Experience.js
-.experience{
-    height: 90vh;
-    @include flexContent(column, space-between);
+.experience {
+    height: 80vh;
+    @include flexContent(column, space-evenly);
     padding-top: 3rem;
     font-size: small
 }
 
 // Contact.js
-.contact{
+.contact {
     height: 10vh;
     @include flexContent(row, center);
     background-color: $primaryColor;
@@ -194,29 +198,30 @@ h3 {
 }
 
 // Footer.js
-.footer{
+.footer {
     @include flexContent(row, center);
     background-color: rgba(15, 15, 19, 0.856);
     color: $secondaryColor;
     padding: 2rem;
-    .footerContainer{
+
+    .footerContainer {
         @include flexContent(column, center);
         height: 20vh;
     }
 
-    .iconsContainer{
+    .iconsContainer {
         @include flexContent(row, space-evenly);
 
-        .icon{
+        .icon {
             color: $secondaryColor;
         }
     }
 
-     @media (max-width: 575.98px) {
-        font-size: smaller;    
+    @media (max-width: 575.98px) {
+        font-size: smaller;
     }
+
     @media (min-width: 576px) and (max-width: 767.98px) {
-        font-size: smaller;  
+        font-size: smaller;
     }
 }
- 

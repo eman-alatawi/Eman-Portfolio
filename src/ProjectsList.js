@@ -35,8 +35,7 @@ const projectsList = [
   {
     proID: 3,
     title: "FaveOne",
-    imgUrl:
-      "https://camo.githubusercontent.com/904b76b58cc2cd860540d1d8ee9bf9807d288a4829ab61f88d587f5f86d06949/68747470733a2f2f64726976652e676f6f676c652e636f6d2f75633f6578706f72743d766965772669643d313146515732536b672d354f7978536251566c7a777156344272324d6854497061",
+    imgUrl:"https://drive.google.com/uc?export=view&id=1Jf-7i6DbGTwb2uen4K3vULdZdZ0Yx-dZ",
     discription:
       "Full-Stack Web-App that considered as Movie and Series system with Advanced Features. Develped using Java spring boot, Spring Security, jwt Authentication, React, MySQL, Tailwindcss, Bootstrap, and MVC deisgn pattern.",
     gitHubUrl: "https://github.com/eman-alatawi/FaveOne-FrontEnd/tree/v3",

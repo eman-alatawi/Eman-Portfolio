@@ -4,7 +4,7 @@ import TimelineComponent from './TimelineComponent'
 function Experience() {
     return (
         <div className="experience" id="experience">
-            <h3 className="pb-3">Experience</h3>
+            <h3 className="">Experience</h3>
             <TimelineComponent />
         </div>
     )

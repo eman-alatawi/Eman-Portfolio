@@ -14,8 +14,8 @@ h3 {
 }
 
 .container {
-  background-color: rgba(15, 15, 19, 0.856);
-  position: fixed;
+  padding: 0;
+  position: fixed !important;
   z-index: 1;
 }
 
@@ -29,6 +29,12 @@ h3 {
 .container .navList .nav-Link:hover {
   color: #5dc8d3 !important;
   border-bottom: 3px solid #5dc8d3;
+}
+
+.container nav.p-3.navbar.navbar-expand-lg.navbar-light {
+  left: 0;
+  background-color: rgba(15, 15, 19, 0.856);
+  width: 100vw;
 }
 
 .container .navbarScroll {
@@ -59,8 +65,8 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background-image: url("/src/Header-background.jpeg"), -webkit-gradient(linear, left top, left bottom, color-stop(15%, #0f0f13), color-stop(50%, #d3d8da));
-  background-image: url("/src/Header-background.jpeg"), linear-gradient(to bottom, #0f0f13 15%, #d3d8da 50%);
+  background-image: url("/src/Header-background.jpeg"), -webkit-gradient(linear, left top, left bottom, color-stop(20%, #0f0f13), color-stop(50%, #999fa1));
+  background-image: url("/src/Header-background.jpeg"), linear-gradient(to bottom, #0f0f13 20%, #999fa1 50%);
   background-blend-mode: darken;
 }
 
@@ -283,7 +289,7 @@ h3 {
 }
 
 .experience {
-  height: 90vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,9 +297,9 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

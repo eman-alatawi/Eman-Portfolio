@@ -8,7 +8,7 @@ import Container from 'react-bootstrap/Container'
 
 function NavBar() {
     return (
-            <Container className=" container mb-5  p-3 ">
+            <Container className=" container mb-5  ">
                 <Navbar expand="lg" className="p-3">
                     <Navbar.Brand href="#"><img className="logo" src={logo} alt="logo" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll">
