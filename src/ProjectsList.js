@@ -5,7 +5,7 @@ const projectsList = [
     imgUrl:
       "https://github.com/eman-alatawi/RememberMyDetails-Game/blob/master/images/screenShots/home.png?raw=true",
     discription:
-      "Little simple Web-Game that focused on how much good the visual memory of the player is. Develped using HTML, CSS, JavaScript, and JQuery.",
+      "little simple Web-Game that focused on how good the visual memory of the player is. Developed using HTML, CSS, JavaScript, and jQuery.",
     gitHubUrl: "https://github.com/eman-alatawi/RememberMyDetails-Game",
     year: 2020,
     technologies: [
@@ -22,7 +22,7 @@ const projectsList = [
     imgUrl:
       "https://github.com/eman-alatawi/project-2-sweethome/blob/v2/src/main/resources/static/images/home-unlogged.png?raw=true",
     discription:
-      "Full-Stack Web-App that considerd as home rental system. Develped using Java spring boot, MySQL, Custom Authentication system, Tailwindcss, Bootstrap, and MVC deisgn pattern.",
+      "Full-Stack Web-App that is considered as home rental system. Developed using Java spring boot, MySQL, Custom Authentication system, Tailwindcss, Bootstrap, and MVC design pattern.",
     gitHubUrl: "https://github.com/eman-alatawi/project-2-sweethome/tree/v2",
     year: 2021,
     technologies: [
@@ -37,7 +37,7 @@ const projectsList = [
     title: "FaveOne",
     imgUrl:"https://drive.google.com/uc?export=view&id=1Jf-7i6DbGTwb2uen4K3vULdZdZ0Yx-dZ",
     discription:
-      "Full-Stack Web-App that considered as Movie and Series system with Advanced Features. Develped using Java spring boot, Spring Security, jwt Authentication, React, MySQL, Tailwindcss, Bootstrap, and MVC deisgn pattern.",
+      "Full-Stack Web-App that is considered as Movie and Series system with Advanced Features. Developed using Java spring boot, Spring Security, jwt Authentication, React, MySQL, Tailwindcss, Bootstrap, and MVC design pattern.",
     gitHubUrl: "https://github.com/eman-alatawi/FaveOne-FrontEnd/tree/v3",
     year: 2021,
     technologies: [

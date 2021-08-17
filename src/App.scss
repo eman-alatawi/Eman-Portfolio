@@ -70,7 +70,7 @@ h3 {
         }
     }
 
-    nav.p-3.navbar.navbar-expand-lg.navbar-light {
+    nav.p-4.navbar.navbar-expand-lg.navbar-light {
         left: 0;
         background-color: rgba(15, 15, 19, 0.856);
         width: 100vw;
@@ -92,7 +92,7 @@ h3 {
     height: 100vh;
     background-image: url("/src/Header-background.jpeg"),
         linear-gradient(to bottom, rgb(15, 15, 19) 20%, #999fa1 50%);
-    background-blend-mode: darken;
+    background-blend-mode: multiply;
 
     .myTitle {
         color: $primaryColor;

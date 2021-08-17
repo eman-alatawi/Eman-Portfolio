@@ -9,7 +9,7 @@ import Container from 'react-bootstrap/Container'
 function NavBar() {
     return (
             <Container className=" container mb-5  ">
-                <Navbar expand="lg" className="p-3">
+                <Navbar expand="lg" className="p-4">
                     <Navbar.Brand href="#"><img className="logo" src={logo} alt="logo" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll">
                         <FontAwesomeIcon icon={faBars} style={{ color: '#9edce3' }} />
