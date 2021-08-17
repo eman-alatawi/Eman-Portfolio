@@ -8,7 +8,7 @@
 - javaScript
 - material-design-icons
 - JSX
-- Scss
+- SCSS
 - Visual Studio Code
 - GitHub
 - GitHub Pages
@@ -26,4 +26,4 @@
 
 ### Website Screenshot:
 
-![Website Screenshot](https://drive.google.com/uc?export=view&id=1DYnK-fPaPsb-W1UNu9sh4SsWRWhwYSex)
+![Website Screenshot](https://drive.google.com/uc?export=view&id=1MbSXITSYM4fgFEBrNEI0d8FUZazEfsIe)
