@@ -1,28 +1,32 @@
 {
   "files": {
-    "main.css": "/Eman-Portfolio/static/css/main.0dee8728.chunk.css",
-    "main.js": "/Eman-Portfolio/static/js/main.29f3d283.chunk.js",
-    "main.js.map": "/Eman-Portfolio/static/js/main.29f3d283.chunk.js.map",
+    "main.css": "/Eman-Portfolio/static/css/main.e395b727.chunk.css",
+    "main.js": "/Eman-Portfolio/static/js/main.de9a2f3e.chunk.js",
+    "main.js.map": "/Eman-Portfolio/static/js/main.de9a2f3e.chunk.js.map",
     "runtime-main.js": "/Eman-Portfolio/static/js/runtime-main.e086897e.js",
     "runtime-main.js.map": "/Eman-Portfolio/static/js/runtime-main.e086897e.js.map",
     "static/css/2.4be38407.chunk.css": "/Eman-Portfolio/static/css/2.4be38407.chunk.css",
-    "static/js/2.107322b2.chunk.js": "/Eman-Portfolio/static/js/2.107322b2.chunk.js",
-    "static/js/2.107322b2.chunk.js.map": "/Eman-Portfolio/static/js/2.107322b2.chunk.js.map",
+    "static/js/2.1099732f.chunk.js": "/Eman-Portfolio/static/js/2.1099732f.chunk.js",
+    "static/js/2.1099732f.chunk.js.map": "/Eman-Portfolio/static/js/2.1099732f.chunk.js.map",
     "static/js/3.b91b2267.chunk.js": "/Eman-Portfolio/static/js/3.b91b2267.chunk.js",
     "static/js/3.b91b2267.chunk.js.map": "/Eman-Portfolio/static/js/3.b91b2267.chunk.js.map",
     "index.html": "/Eman-Portfolio/index.html",
     "static/css/2.4be38407.chunk.css.map": "/Eman-Portfolio/static/css/2.4be38407.chunk.css.map",
-    "static/css/main.0dee8728.chunk.css.map": "/Eman-Portfolio/static/css/main.0dee8728.chunk.css.map",
-    "static/js/2.107322b2.chunk.js.LICENSE.txt": "/Eman-Portfolio/static/js/2.107322b2.chunk.js.LICENSE.txt",
+    "static/css/main.e395b727.chunk.css.map": "/Eman-Portfolio/static/css/main.e395b727.chunk.css.map",
+    "static/js/2.1099732f.chunk.js.LICENSE.txt": "/Eman-Portfolio/static/js/2.1099732f.chunk.js.LICENSE.txt",
+    "static/media/CyberX-logo.7c232e50.png": "/Eman-Portfolio/static/media/CyberX-logo.7c232e50.png",
     "static/media/App.css": "/Eman-Portfolio/static/media/projects-sec.5ef1003b.jpeg",
+    "static/media/MiSK_Foundation_logo.c9623eee.svg": "/Eman-Portfolio/static/media/MiSK_Foundation_logo.c9623eee.svg",
+    "static/media/general-assembly.3768682f.svg": "/Eman-Portfolio/static/media/general-assembly.3768682f.svg",
     "static/media/logo.3514951c.png": "/Eman-Portfolio/static/media/logo.3514951c.png",
-    "static/media/picture.5370734c.png": "/Eman-Portfolio/static/media/picture.5370734c.png"
+    "static/media/picture.5370734c.png": "/Eman-Portfolio/static/media/picture.5370734c.png",
+    "static/media/udacity-seeklogo.bf82d268.svg": "/Eman-Portfolio/static/media/udacity-seeklogo.bf82d268.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e086897e.js",
     "static/css/2.4be38407.chunk.css",
-    "static/js/2.107322b2.chunk.js",
-    "static/css/main.0dee8728.chunk.css",
-    "static/js/main.29f3d283.chunk.js"
+    "static/js/2.1099732f.chunk.js",
+    "static/css/main.e395b727.chunk.css",
+    "static/js/main.de9a2f3e.chunk.js"
   ]
 }
