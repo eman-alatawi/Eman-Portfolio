@@ -5,7 +5,10 @@ function Experience() {
     return (
         <div className="experience" id="experience">
             <h3 className="">Experience</h3>
-            <TimelineComponent />
+            <div className="timeLineContainer">
+             <TimelineComponent />
+            </div>
+           
         </div>
     )
 }

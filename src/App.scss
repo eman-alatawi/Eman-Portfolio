@@ -186,7 +186,14 @@ h3 {
     height: 80vh;
     @include flexContent(column, space-evenly);
     padding-top: 3rem;
-    font-size: small
+    font-size: small;
+    .timeLineContainer{
+        // background-color: $secondaryColor;
+        height: 60vh;
+        overflow-y: scroll;
+
+        
+    }
 }
 
 // Contact.js

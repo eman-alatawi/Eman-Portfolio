@@ -307,6 +307,11 @@ h3 {
   font-size: small;
 }
 
+.experience .timeLineContainer {
+  height: 60vh;
+  overflow-y: scroll;
+}
+
 .contact {
   height: 10vh;
   display: -webkit-box;

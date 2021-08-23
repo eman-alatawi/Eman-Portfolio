@@ -13,6 +13,7 @@ import WorkIcon from '@material-ui/icons/Work';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import BookIcon from '@material-ui/icons/Book';
+import {GiArtificialIntelligence} from 'react-icons/all'
 
 const useStyles = makeStyles((theme) => ({
   typographyTitle: {
@@ -96,6 +97,27 @@ export default function TimelineComponent() {
                 The Future of Work Fundamentals Phase-1
                 </Typography>
                 <Typography className={classes.typographySub}>Misk Foundation & Udacity </Typography>
+              </Paper>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+          <TimelineOppositeContent>
+              <Typography variant="body2" color="textSecondary">
+              Aug 2021 - Sep 2021
+              </Typography>
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot>
+                <GiArtificialIntelligence size="1.5rem"/>
+              </TimelineDot>
+              <TimelineConnector className={classes.secondaryTail} />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Paper elevation={3} className={classes.paper}>
+                <Typography variant="h6" className={classes.typographyTitle}>
+                AI for Business Nanodegree 
+                </Typography>
+                <Typography className={classes.typographySub}> Udacity </Typography>
               </Paper>
             </TimelineContent>
           </TimelineItem>

@@ -5,6 +5,7 @@
 - React
 - React Hooks
 - React-Bootstrap
+- React Icons
 - javaScript
 - material-design-icons
 - JSX
