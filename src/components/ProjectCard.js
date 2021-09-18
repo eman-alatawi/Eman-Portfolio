@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     },
     typography: {
         [theme.breakpoints.down("sm")]: {
-          textAlign: 'justify',
+          textAlign: 'left',
         },
         [theme.breakpoints.up("md")]: {
             textAlign: 'justify',
