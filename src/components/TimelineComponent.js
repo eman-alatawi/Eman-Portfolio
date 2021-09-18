@@ -17,8 +17,10 @@ import udacityLogo from "../images/udacity-seeklogo.svg";
 import generalAsseblyLogo from "../images/general-assembly.svg";
 import cyberxLogo from "../images/CyberX-logo.png";
 import miskLogo from "../images/MiSK_Foundation_logo.svg";
+import simplilearnLogo from "../images/SimplilearnLogo.png"
 
-import { GiArtificialIntelligence } from "react-icons/all";
+import { GiArtificialIntelligence, GiStairsGoal } from "react-icons/all";
+
 
 const useStyles = makeStyles((theme) => ({
   typographyTitle: {
@@ -178,7 +180,7 @@ export default function TimelineComponent() {
           <TimelineDot>
             <GiArtificialIntelligence size="1.5rem" />
           </TimelineDot>
-          <TimelineConnector className={classes.secondaryTail} />
+          <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
@@ -187,6 +189,33 @@ export default function TimelineComponent() {
             </Typography>
             <Typography className={classes.typographySub}>
               <img src={udacityLogo} className={classes.imgWidth} />{" "}
+            </Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent>
+          <Typography
+            variant="body2"
+            color="textSecondary"
+            className={classes.typographyDate}
+          >
+            Sep 2021 - Present
+          </Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot>
+            <GiStairsGoal size="1.5rem" />
+          </TimelineDot>
+          <TimelineConnector className={classes.secondaryTail} />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={3} className={classes.paper}>
+            <Typography variant="h6" className={classes.typographyTitle}>
+            Full Stack Developer (MERN) - Internship 
+            </Typography>
+            <Typography className={classes.typographySub}>
+              <img src={simplilearnLogo} className={classes.imgWidth} />{" "}
             </Typography>
           </Paper>
         </TimelineContent>

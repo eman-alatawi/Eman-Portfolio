@@ -1,13 +1,14 @@
 import React from "react";
-import picture from "../picture.png";
+import banner from "../images/banner.png";
+
 
 function AboutMe() {
   return (
     <div className="about-me" id="aboutMe">
-      <img src={picture} alt="banner" />
+      <img src={banner} alt="banner" />
       <div>
         <h3>About Me</h3>
-        <p className="text-justify">
+        <p>
           Hi, I am Eman, a full stack developer. I have been contributed to
           Multi-phases of the development lifecycle and Wrote a well-designed,
           testable, and efficient code following the conventions of the

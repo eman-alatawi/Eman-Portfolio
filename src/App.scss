@@ -3,7 +3,7 @@
 $fontFamily: "Orbitron",
 sans-serif;
 $primaryColor: #e1a628;
-$secondaryColor: #5dc8d3;
+$secondaryColor: #01A4FB;
 $sectionHeight: 100vh;
 
 @mixin flexContent($direction, $justify) {
@@ -15,6 +15,9 @@ $sectionHeight: 100vh;
 
 @mixin aboutMe-Veritcle {
     @include flexContent(column, center);
+    h3{
+        text-align: center;
+    }
 
     p {
         width: 70vw;
@@ -124,6 +127,7 @@ h3 {
         font-family: sans-serif;
         width: 50vw;
         line-height: 200%;
+        text-align: justify !important;
     }
 
     @media (max-width: 575.98px) {
@@ -171,7 +175,7 @@ h3 {
     min-height: "10rem";
 
     &:hover {
-        background-color: $secondaryColor;
+        background-color: #f4f7f9;
     }
 }
 
@@ -215,7 +219,7 @@ h3 {
 
     .footerContainer {
         @include flexContent(column, center);
-        height: 20vh;
+        height: 10vh;
     }
 
     .iconsContainer {

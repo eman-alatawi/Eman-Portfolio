@@ -5,7 +5,7 @@ import projectsList from "../ProjectsList";
 function Projects() {
   return (
     <div className="projects" id="projects">
-      <h3>My projects</h3>
+      <h3>projects</h3>
       <div className="projects-list">
         {projectsList.map((project) => (
           <ProjectCard

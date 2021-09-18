@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../logo.png'
+import logo from '../images/logo.png'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,6 +7,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Container from 'react-bootstrap/Container'
 
 function NavBar() {
+    
     return (
             <Container className=" container mb-5  ">
                 <Navbar expand="lg" className="p-4">

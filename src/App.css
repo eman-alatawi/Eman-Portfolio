@@ -27,8 +27,8 @@ h3 {
 }
 
 .container .navList .nav-Link:hover {
-  color: #5dc8d3 !important;
-  border-bottom: 3px solid #5dc8d3;
+  color: #01A4FB !important;
+  border-bottom: 3px solid #01A4FB;
 }
 
 .container nav.p-4.navbar.navbar-expand-lg.navbar-light {
@@ -76,7 +76,7 @@ h3 {
 }
 
 .Header-section .typed-text {
-  color: #5dc8d3;
+  color: #01A4FB;
   font-size: larger;
 }
 
@@ -110,6 +110,7 @@ h3 {
   font-family: sans-serif;
   width: 50vw;
   line-height: 200%;
+  text-align: justify !important;
 }
 
 @media (max-width: 575.98px) {
@@ -127,6 +128,9 @@ h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .about-me h3 {
+    text-align: center;
   }
   .about-me p {
     width: 70vw;
@@ -154,6 +158,9 @@ h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .about-me h3 {
+    text-align: center;
   }
   .about-me p {
     width: 70vw;
@@ -267,7 +274,7 @@ h3 {
 }
 
 .content:hover {
-  background-color: #5dc8d3;
+  background-color: #f4f7f9;
 }
 
 .card-footer {
@@ -310,8 +317,8 @@ h3 {
 .experience .timeLineContainer {
   height: 60vh;
   overflow-y: scroll;
-  border-top: 1.5rem solid #5dc8d3;
-  border-bottom: 1.5rem solid #5dc8d3;
+  border-top: 1.5rem solid #01A4FB;
+  border-bottom: 1.5rem solid #01A4FB;
   border-radius: 1rem;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -350,7 +357,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   background-color: rgba(15, 15, 19, 0.856);
-  color: #5dc8d3;
+  color: #01A4FB;
   padding: 2rem;
 }
 
@@ -368,7 +375,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 20vh;
+  height: 10vh;
 }
 
 .footer .iconsContainer {
@@ -388,7 +395,7 @@ h3 {
 }
 
 .footer .iconsContainer .icon {
-  color: #5dc8d3;
+  color: #01A4FB;
 }
 
 @media (max-width: 575.98px) {

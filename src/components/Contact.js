@@ -11,7 +11,7 @@ export default function Contact() {
           textAlign: "center",
           borderRadius: "5px",
           padding: "5px",
-          backgroundColor: "#5dc8d3",
+          backgroundColor: "#01A4FB",
         }}
       >
         {" "}
