@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Eman-Portfolio/static/css/main.adb03388.chunk.css",
-    "main.js": "/Eman-Portfolio/static/js/main.430df144.chunk.js",
-    "main.js.map": "/Eman-Portfolio/static/js/main.430df144.chunk.js.map",
+    "main.js": "/Eman-Portfolio/static/js/main.8e55bb0e.chunk.js",
+    "main.js.map": "/Eman-Portfolio/static/js/main.8e55bb0e.chunk.js.map",
     "runtime-main.js": "/Eman-Portfolio/static/js/runtime-main.eb5aa2a5.js",
     "runtime-main.js.map": "/Eman-Portfolio/static/js/runtime-main.eb5aa2a5.js.map",
     "static/css/2.4be38407.chunk.css": "/Eman-Portfolio/static/css/2.4be38407.chunk.css",
@@ -27,6 +27,6 @@
     "static/css/2.4be38407.chunk.css",
     "static/js/2.bd6118c2.chunk.js",
     "static/css/main.adb03388.chunk.css",
-    "static/js/main.430df144.chunk.js"
+    "static/js/main.8e55bb0e.chunk.js"
   ]
 }
