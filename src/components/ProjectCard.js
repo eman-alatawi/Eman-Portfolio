@@ -9,7 +9,7 @@ import IconButton from "@material-ui/core/IconButton";
 import { makeStyles } from "@material-ui/core/styles";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: "21.57rem",
         minHeight: "25rem",
@@ -20,7 +20,23 @@ const useStyles = makeStyles({
         objectFit: "contain",
         objectPosition: "center",
     },
-});
+    typographyTitle: {
+        [theme.breakpoints.down("sm")]: {
+          textAlign: 'center',
+        },
+        [theme.breakpoints.up("md")]: {
+            textAlign: 'center',
+        },
+    },
+    typography: {
+        [theme.breakpoints.down("sm")]: {
+          textAlign: 'justify',
+        },
+        [theme.breakpoints.up("md")]: {
+            textAlign: 'justify',
+        },
+    }
+}));
 
 function ProjectCard({ title, imgUrl, gitHubUrl, discription, technologies, year }) {
     const classes = useStyles();
@@ -34,10 +50,10 @@ function ProjectCard({ title, imgUrl, gitHubUrl, discription, technologies, year
                         title="project image"
                     />
                     <CardContent className="content">
-                        <Typography gutterBottom variant="h5">
+                        <Typography gutterBottom variant="h5" className={classes.typographyTitle}>
                             {title}
                         </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
+                        <Typography variant="body2" color="textSecondary" component="p" className={classes.typography}>
                             {discription}
                         </Typography>
                     </CardContent>
