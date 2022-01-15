@@ -9,15 +9,13 @@ function AboutMe() {
       <div>
         <h3>About Me</h3>
         <p>
-          Hi, I am Eman, a full stack developer. I have been contributed to
-          Multi-phases of the development lifecycle and Wrote a well-designed,
+          Hi, I am Eman, a full stack web developer / mern developer. I have been contributed to
+          Multi-phases of the app development lifecycle and wrote a well-designed,
           testable, and efficient code following the conventions of the
           programming in order to give a professional look. I'm ready to build
-          full-stack web applications (using Java Spring boot, Spring security,
-          Jwt Authentication, JPA, Rest API, React, Html5, CSS3, JavaScript,
-          jQuery, MySQL, Tailwind CSS, Bootstrap, Material-UI, Axios, and
-          GitHub) with MVC design pattern and design the wireframes and mockups
-          with UI & UX concepts in mind.
+          full-stack web applications with MERN stack (MongoDB, Express.js, React.js, Node.js) or Java stack (Java Spring boot, Spring security,
+          Jwt Authentication, JPA, Rest API, React, MySQL) with MVC design pattern and design the wireframes and mockups with UI & UX concepts in mind. Full Stack Development Languages: JavaScript, Java, Html5, CSS3. Full Stack Development Skills: Java Spring Boot, Spring Security, Spring MVC, AJAX,
+          jQuery, Bootstrap, Tailwind CSS, Material-UI, Node.js, ExpressJs, Redux Toolkit, Git & GitHub.
         </p>
       </div>
     </div>

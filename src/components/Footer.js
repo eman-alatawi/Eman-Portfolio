@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footerContainer">
-        <p>Ⓒ Copy right for Eman Alatawi 2021</p>
+        <p>Ⓒ Copyright Reserved for  Eman Alatawi 2022</p>
         <div className=" iconsContainer  ">
           <div className="me-4">
             <a href="https://www.linkedin.com/in/eman-alatawi/" target="_blank" rel="noreferrer">

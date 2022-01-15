@@ -24,7 +24,8 @@
 - react-typed
 - react-animated-css
 - react-hover-animation
+- react-responsive-carousel
 
 ### Website Screenshot:
 
-![Website Screenshot](https://drive.google.com/uc?export=view&id=1peBu_kV92yFF64S-hcCR32aNwr6iaO3r)
+![Website Screenshot](https://i.ibb.co/743n8p0/portfolio-last-upate.png)

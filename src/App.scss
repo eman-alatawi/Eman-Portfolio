@@ -1,240 +1,264 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 
-$fontFamily: "Orbitron",
-sans-serif;
+$fontFamily: "Orbitron", sans-serif;
 $primaryColor: #e1a628;
-$secondaryColor: #01A4FB;
+$secondaryColor: #01a4fb;
 $sectionHeight: 100vh;
 
 @mixin flexContent($direction, $justify) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: center;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
 }
 
-@mixin aboutMe-Veritcle {
-    @include flexContent(column, center);
-    h3{
-        text-align: center;
-    }
+@mixin aboutMe-Veritcle($height, $pHeight) {
+  height: $height;
+  @include flexContent(column, center);
+  h3 {
+    text-align: center;
+  }
 
-    p {
-        width: 70vw;
-        height: 50vh;
-        overflow-y: scroll;
-        font-size: small;
-    }
+  p {
+    width: 70vw;
+    height: $pHeight;
+    overflow-y: scroll;
+    font-size: small;
+  }
 
-    img {
-        width: 15rem;
-    }
+  img {
+    width: 15rem;
+  }
 }
 
 @mixin Projects-Veritcle {
-    @include flexContent(column, center);
-
-    width: 80vw;
-    overflow-y: scroll;
-    font-size: small;
+  display: none;
+  font-size: small;
 }
 
+@mixin projects-message($fontSize) {
+  height: 10rem;
+  h3 {
+    text-align: center;
+
+    font-size: $fontSize;
+  }
+  h3::before {
+    content: "It's recommended to use a laptop/pc to view the ";
+    line-height: 2rem;
+  }
+}
 body {
-    margin: auto;
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-    font-family: $fontFamily;
+  margin: auto;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  font-family: $fontFamily;
 }
 
 h3 {
-    color: $primaryColor;
+  color: $primaryColor;
 }
 
+.logoContainer {
+  height: 1.5rem;
+  width: 1.5rem;
+  position: relative;
+}
 // NavBar.js
 .logo {
-    width: 15rem;
+  width: 15rem;
+  margin-left: 2rem;
 }
 
 .container {
-    padding: 0;
-    position: fixed !important;
-    z-index: 1;
+  padding: 0;
+  z-index: 1;
+  margin: 0;
 
-    .navList {
-        .nav-Link {
-            text-align: center;
-            margin-right: 0.5rem;
-            margin-left: 0.5rem;
-            color: $primaryColor !important;
+  .navList {
+    padding: 0 2rem;
+    .nav-Link {
+      text-align: center;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+      color: $primaryColor !important;
 
-            &:hover {
-                color: $secondaryColor !important;
-                border-bottom: 3px solid $secondaryColor;
-            }
-        }
+      &:hover {
+        color: $secondaryColor !important;
+        border-bottom: 3px solid $secondaryColor;
+      }
     }
+  }
 
-    nav.p-4.navbar.navbar-expand-lg.navbar-light {
-        left: 0;
-        background-color: rgba(15, 15, 19, 0.856);
-        width: 100vw;
-    }
+  nav.navbar.navbar-expand-lg.navbar-light {
+    left: 0;
+    background-color: rgba(15, 15, 19, 0.954);
+    width: 100vw;
+  }
 
-    .navbarScroll {
-        margin-bottom: 2rem;
-        text-align: right;
-    }
-
-    @media (max-width: 576px) {
-        height: min-content;
-    }
+  @media (max-width: 576px) {
+    height: min-content;
+  }
 }
 
 // Header.js
 .Header-section {
-    @include flexContent(row, center);
-    height: 100vh;
-    background-image: url("/src/Header-background.jpeg"),
-        linear-gradient(to bottom, rgb(15, 15, 19) 20%, #999fa1 50%);
-    background-blend-mode: multiply;
+  @include flexContent(row, center);
+  height: 70vh;
+  background-image: url("/src/Header-background.jpeg"),
+    linear-gradient(to bottom, rgb(15, 15, 19) 20%, #999fa1 50%);
+  background-blend-mode: multiply;
 
+  .myTitle {
+    color: $primaryColor;
+    font-size: xx-large;
+  }
+
+  .typed-text {
+    color: $secondaryColor;
+    font-size: larger;
+  }
+
+  @media (max-width: 576px) {
+    height: 50vh;
     .myTitle {
-        color: $primaryColor;
-        font-size: xx-large;
+      font-size: large;
     }
 
     .typed-text {
-        color: $secondaryColor;
-        font-size: larger;
+      font-size: large;
     }
-
-    @media (max-width: 576px) {
-        .myTitle {
-            font-size: larger;
-        }
-
-        .typed-text {
-            font-size: large;
-        }
+  }
+  @media (min-width: 576px) and (max-width: 769px) {
+    height: 50vh;
+    .myTitle {
+      font-size: x-large;
     }
+  }
 }
 
 //  AboutMe.js
 .about-me {
-    height: $sectionHeight;
-    @include flexContent(row, space-evenly);
+  height: 60vh;
+  @include flexContent(row, space-evenly);
 
-    p {
-        font-family: sans-serif;
-        width: 50vw;
-        line-height: 200%;
-        text-align: justify !important;
-    }
+  p {
+    font-family: sans-serif;
+    width: 50vw;
+    line-height: 200%;
+    text-align: justify !important;
+  }
 
-    @media (max-width: 575.98px) {
-        @include aboutMe-Veritcle();
-    }
+  @media (max-width: 575.98px) {
+    @include aboutMe-Veritcle($sectionHeight, 50vh);
+  }
 
-    @media (min-width: 576px) and (max-width: 767.98px) {
-        @include aboutMe-Veritcle();
-    }
+  @media (min-width: 576px) and (max-width: 769px) {
+    @include aboutMe-Veritcle(50vh, 25vh);
+  }
 }
 
 // Projects.js
 .projects {
-    padding: 3rem;
-    height: $sectionHeight;
-    @include flexContent(column, space-evenly);
-    background-image: url("/src/projects-sec.jpeg"),
-        linear-gradient(to top, rgb(15, 15, 18) 30%, #d3d8da 100%);
-    background-blend-mode: multiply;
-    background-size: cover;
+  padding: 3rem;
+  height: 130vh;
+  @include flexContent(column, space-evenly);
+  background-image: url("/src/projects-sec.jpeg"),
+    linear-gradient(to top, rgb(15, 15, 18) 30%, #d3d8da 100%);
+  background-blend-mode: multiply;
+  background-size: cover;
 
-    .projects-list {
-        @include flexContent(row, center);
-
-        @media (max-width: 575.98px) {
-            @include Projects-Veritcle();
-        }
-
-        @media (min-width: 576px) and (max-width: 767.98px) {
-            @include Projects-Veritcle();
-        }
-    }
+  .projects-list {
+    width: 80vw;
+    position: relative;
 
     @media (max-width: 575.98px) {
-        height: min-content;
+      @include Projects-Veritcle();
     }
 
-    @media (min-width: 576px) and (max-width: 767.98px) {
-        height: min-content;
+    @media (min-width: 576px) and (max-width: 769px) {
+      @include Projects-Veritcle();
     }
+  }
+
+  @media (max-width: 575.98px) {
+    @include projects-message(small);
+  }
+
+  @media (min-width: 576px) and (max-width: 769px) {
+    @include projects-message(medium);
+  }
+}
+.carousel {
+  width: "100%";
+  height: "100%";
+  object-fit: "contain";
 }
 
 // ProjectCard.js
 .content {
-    min-height: "10rem";
+  height: "6rem";
 
-    &:hover {
-        background-color: #f4f7f9;
-    }
+  &:hover {
+    background-color: #f4f7f9;
+  }
 }
 
 .card-footer {
-    @include flexContent(row, space-between);
-    min-height: "2rem";
-    color: #808485;
+  @include flexContent(row, space-evenly);
+  min-height: "2rem";
+  background-color: #000000b8;
+  color: #808485;
 }
 
 //Experience.js
 .experience {
-    height: 80vh;
-    @include flexContent(column, space-evenly);
-    padding-top: 3rem;
-    font-size: small;
-    .timeLineContainer{
-        // background-color: $secondaryColor;
-        height: 60vh;
-        overflow-y: scroll;
-        border-top: 1.5rem solid $secondaryColor;
-        border-bottom: 1.5rem solid $secondaryColor;
-        border-radius: 1rem;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;        
-    }
+  height: 80vh;
+  @include flexContent(column, space-evenly);
+  padding: 3rem 0;
+  font-size: small;
+  .timeLineContainer {
+    height: 60vh;
+    overflow-y: scroll;
+    border-top: 1.5rem solid $secondaryColor;
+    border-bottom: 1.5rem solid $secondaryColor;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
 }
 
 // Contact.js
 .contact {
-    height: 10vh;
-    @include flexContent(row, center);
-    background-color: $primaryColor;
-
+  height: 10vh;
+  @include flexContent(row, center);
+  background-color: $primaryColor;
 }
 
 // Footer.js
 .footer {
-    @include flexContent(row, center);
-    background-color: rgba(15, 15, 19, 0.856);
-    color: $secondaryColor;
-    padding: 2rem;
+  @include flexContent(row, center);
+  background-color: rgba(15, 15, 19, 0.954);
+  color: $primaryColor;
+  padding: 2rem;
 
-    .footerContainer {
-        @include flexContent(column, center);
-        height: 10vh;
+  .footerContainer {
+    @include flexContent(column, center);
+    height: 10vh;
+  }
+
+  .iconsContainer {
+    @include flexContent(row, space-evenly);
+
+    .icon {
+      color: $secondaryColor;
     }
+  }
 
-    .iconsContainer {
-        @include flexContent(row, space-evenly);
+  @media (max-width: 575.98px) {
+    font-size: smaller;
+  }
 
-        .icon {
-            color: $secondaryColor;
-        }
-    }
-
-    @media (max-width: 575.98px) {
-        font-size: smaller;
-    }
-
-    @media (min-width: 576px) and (max-width: 767.98px) {
-        font-size: smaller;
-    }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: smaller;
+  }
 }

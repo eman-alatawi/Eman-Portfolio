@@ -5,22 +5,30 @@ function Header() {
   return (
     <div className="Header-section" id="home">
       <div className="pt-1 text-center ">
-        <p className="text-capitalize myTitle">Full stack developer</p>
+        <p className="text-capitalize myTitle">Full Stack Web Developer | MERN </p>
         <Typed
           className=" typed-text "
           strings={[
-            "Java Spring Boot",
-            "React",
-            "HTML",
-            "CSS",
+            
+            "React.js",
+            "Redux Toolkit",
+            "HTML 5",
+            "CSS 3",
             "SCSS",
-            "Bootstrap",
+            "Styled Components",
+            "Bootstrap 5",
+            "Java Spring Boot",
             "JavaScript",
             "jquery",
             "Tailwindcss",
             "Material-UI",
             "GitHub",
             "MySQL",
+            "MongoDB", 
+            "Express.js",
+            "Node.js",
+            "Docker",
+            "AWS"
           ]}
           typeSpeed={40}
           backSpeed={50}

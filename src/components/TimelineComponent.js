@@ -104,7 +104,7 @@ export default function TimelineComponent() {
               Internship
             </Typography>
             <Typography className={classes.typographySub}>
-              <img src={cyberxLogo} className={classes.imgWidth} />
+              <img src={cyberxLogo} className={classes.imgWidth} alt="" />
             </Typography>
           </Paper>
         </TimelineContent>
@@ -128,10 +128,10 @@ export default function TimelineComponent() {
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
             <Typography variant="h6" className={classes.typographyTitle}>
-              Java Developer-participant
+              Java Developer - Participant
             </Typography>
             <Typography className={classes.typographySub}>
-              <img src={generalAsseblyLogo} className={classes.imgWidth} />
+              <img src={generalAsseblyLogo} className={classes.imgWidth} alt=""/>
             </Typography>
           </Paper>
         </TimelineContent>
@@ -159,10 +159,9 @@ export default function TimelineComponent() {
             </Typography>
             <Typography className={classes.typographySub}>
               {" "}
-              <img src={miskLogo} className={classes.miskLogo} />{" "}
-              <img src={udacityLogo} className={classes.imgWidth} />{" "}
+              <img src={miskLogo} className={classes.miskLogo} alt=""/>{" "}
+              <img src={udacityLogo} className={classes.imgWidth} alt=""/>{" "}
             </Typography>
-            {/* <Typography className={classes.typographySub}>  <img src={udacityLogo} className="m-2"/> Udacity </Typography> */}
           </Paper>
         </TimelineContent>
       </TimelineItem>
@@ -188,7 +187,7 @@ export default function TimelineComponent() {
               AI for Business Nanodegree
             </Typography>
             <Typography className={classes.typographySub}>
-              <img src={udacityLogo} className={classes.imgWidth} />{" "}
+              <img src={udacityLogo} className={classes.imgWidth} alt=""/>{" "}
             </Typography>
           </Paper>
         </TimelineContent>
@@ -200,7 +199,7 @@ export default function TimelineComponent() {
             color="textSecondary"
             className={classes.typographyDate}
           >
-            Sep 2021 - Present
+            Sep 2021 - Jan 2022
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -215,7 +214,7 @@ export default function TimelineComponent() {
             Full Stack Developer (MERN) - Internship 
             </Typography>
             <Typography className={classes.typographySub}>
-              <img src={simplilearnLogo} className={classes.imgWidth} />{" "}
+              <img src={simplilearnLogo} className={classes.imgWidth} alt=""/>{" "}
             </Typography>
           </Paper>
         </TimelineContent>

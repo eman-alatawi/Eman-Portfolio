@@ -1,23 +1,25 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import projectsList from "../ProjectsList";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 function Projects() {
   return (
     <div className="projects" id="projects">
       <h3>projects</h3>
       <div className="projects-list">
-        {projectsList.map((project) => (
-          <ProjectCard
-            key={project.proID}
-            title={project.title}
-            imgUrl={project.imgUrl}
-            gitHubUrl={project.gitHubUrl}
-            discription={project.discription}
-            year={project.year}
-            technologies={project.technologies}
-          />
-        ))}
+        <Carousel
+          className="carousel"
+          showThumbs={false}
+          showStatus={false}
+          useKeyboardArrows
+          autoPlay
+        >
+          {projectsList.map((project) => (
+            <ProjectCard key={project.proID} {...project} />
+          ))}
+        </Carousel>
       </div>
     </div>
   );

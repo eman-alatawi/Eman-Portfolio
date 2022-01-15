@@ -9,14 +9,25 @@ h3 {
   color: #e1a628;
 }
 
+.logoContainer {
+  height: 1.5rem;
+  width: 1.5rem;
+  position: relative;
+}
+
 .logo {
   width: 15rem;
+  margin-left: 2rem;
 }
 
 .container {
   padding: 0;
-  position: fixed !important;
   z-index: 1;
+  margin: 0;
+}
+
+.container .navList {
+  padding: 0 2rem;
 }
 
 .container .navList .nav-Link {
@@ -27,19 +38,14 @@ h3 {
 }
 
 .container .navList .nav-Link:hover {
-  color: #01A4FB !important;
-  border-bottom: 3px solid #01A4FB;
+  color: #01a4fb !important;
+  border-bottom: 3px solid #01a4fb;
 }
 
-.container nav.p-4.navbar.navbar-expand-lg.navbar-light {
+.container nav.navbar.navbar-expand-lg.navbar-light {
   left: 0;
-  background-color: rgba(15, 15, 19, 0.856);
+  background-color: rgba(15, 15, 19, 0.954);
   width: 100vw;
-}
-
-.container .navbarScroll {
-  margin-bottom: 2rem;
-  text-align: right;
 }
 
 @media (max-width: 576px) {
@@ -64,7 +70,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 70vh;
   background-image: url("/src/Header-background.jpeg"), -webkit-gradient(linear, left top, left bottom, color-stop(20%, #0f0f13), color-stop(50%, #999fa1));
   background-image: url("/src/Header-background.jpeg"), linear-gradient(to bottom, #0f0f13 20%, #999fa1 50%);
   background-blend-mode: multiply;
@@ -76,21 +82,33 @@ h3 {
 }
 
 .Header-section .typed-text {
-  color: #01A4FB;
+  color: #01a4fb;
   font-size: larger;
 }
 
 @media (max-width: 576px) {
+  .Header-section {
+    height: 50vh;
+  }
   .Header-section .myTitle {
-    font-size: larger;
+    font-size: large;
   }
   .Header-section .typed-text {
     font-size: large;
   }
 }
 
+@media (min-width: 576px) and (max-width: 769px) {
+  .Header-section {
+    height: 50vh;
+  }
+  .Header-section .myTitle {
+    font-size: x-large;
+  }
+}
+
 .about-me {
-  height: 100vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,6 +133,7 @@ h3 {
 
 @media (max-width: 575.98px) {
   .about-me {
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -143,8 +162,9 @@ h3 {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 769px) {
   .about-me {
+    height: 50vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -164,7 +184,7 @@ h3 {
   }
   .about-me p {
     width: 70vw;
-    height: 50vh;
+    height: 25vh;
     overflow-y: scroll;
     font-size: small;
   }
@@ -175,7 +195,7 @@ h3 {
 
 .projects {
   padding: 3rem;
-  height: 100vh;
+  height: 130vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,81 +216,61 @@ h3 {
 }
 
 .projects .projects-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 80vw;
+  position: relative;
 }
 
 @media (max-width: 575.98px) {
   .projects .projects-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 80vw;
-    overflow-y: scroll;
+    display: none;
     font-size: small;
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 769px) {
   .projects .projects-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 80vw;
-    overflow-y: scroll;
+    display: none;
     font-size: small;
   }
 }
 
 @media (max-width: 575.98px) {
   .projects {
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
+    height: 10rem;
+  }
+  .projects h3 {
+    text-align: center;
+    font-size: small;
+  }
+  .projects h3::before {
+    content: "It's recommended to use a laptop/pc to view the ";
+    line-height: 2rem;
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 769px) {
   .projects {
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
+    height: 10rem;
   }
+  .projects h3 {
+    text-align: center;
+    font-size: medium;
+  }
+  .projects h3::before {
+    content: "It's recommended to use a laptop/pc to view the ";
+    line-height: 2rem;
+  }
+}
+
+.carousel {
+  width: "100%";
+  height: "100%";
+  -o-object-fit: "contain";
+     object-fit: "contain";
 }
 
 .content {
-  min-height: "10rem";
+  height: "6rem";
 }
 
 .content:hover {
@@ -285,13 +285,14 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   min-height: "2rem";
+  background-color: #000000b8;
   color: #808485;
 }
 
@@ -310,15 +311,15 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 3rem;
+  padding: 3rem 0;
   font-size: small;
 }
 
 .experience .timeLineContainer {
   height: 60vh;
   overflow-y: scroll;
-  border-top: 1.5rem solid #01A4FB;
-  border-bottom: 1.5rem solid #01A4FB;
+  border-top: 1.5rem solid #01a4fb;
+  border-bottom: 1.5rem solid #01a4fb;
   border-radius: 1rem;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -356,8 +357,8 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(15, 15, 19, 0.856);
-  color: #01A4FB;
+  background-color: rgba(15, 15, 19, 0.954);
+  color: #e1a628;
   padding: 2rem;
 }
 
@@ -395,7 +396,7 @@ h3 {
 }
 
 .footer .iconsContainer .icon {
-  color: #01A4FB;
+  color: #01a4fb;
 }
 
 @media (max-width: 575.98px) {
