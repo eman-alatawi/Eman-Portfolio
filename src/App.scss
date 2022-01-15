@@ -240,6 +240,7 @@ h3 {
   background-color: rgba(15, 15, 19, 0.954);
   color: $primaryColor;
   padding: 2rem;
+  text-align: center;
 
   .footerContainer {
     @include flexContent(column, center);
