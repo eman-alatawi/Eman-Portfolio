@@ -6,8 +6,8 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
-import ReactGa from 'react-ga'
-import {useEffect} from 'react'
+// import ReactGa from 'react-ga'
+
 // import dotenv from 'dotenv';
 
 // dotenv.config();
